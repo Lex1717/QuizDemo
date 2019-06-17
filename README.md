@@ -1,7 +1,7 @@
 # QuizDemo
 Small demo app for solving quizzes
 
-App was created as **single-activity multi-module project**. Created in **Kotlin** with **Clean architecture** approach, using **MVP** for the presentational layer.
+App was created as a **single-activity multi-module project**. Created in **Kotlin** with **Clean architecture** approach, using **MVP** for the presentational layer.
 In the project I used **RxJava 2, Dagger 2 and Realm**.
 
 Wrote two demo test:
