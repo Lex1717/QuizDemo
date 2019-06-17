@@ -1,0 +1,19 @@
+{
+  "courseList": [
+    {
+      "courseId": 130,
+      "header": "21 course",
+      "subheader": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+    },
+    {
+      "courseId": 131,
+      "header": "22 course",
+      "subheader": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+    },
+    {
+      "courseId": 132,
+      "header": "23 course",
+      "subheader": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+    }
+  ]
+}

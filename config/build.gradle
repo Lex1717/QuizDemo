@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+kapt {
+    useBuildCache = true
+    arguments {
+        arg("dagger.formatGeneratedSource", "disabled")
+        arg("dagger.gradle.incremental", "enabled")
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':core')
+
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+    //Test
+    testImplementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoVersion"
+    androidTestImplementation ("com.android.support.test:runner:$testRunnerVersion"){
+        exclude module: 'support-annotations'
+    }
+    androidTestImplementation ("com.android.support.test.espresso:espresso-core:$espressoVersion"){
+        exclude module: 'support-annotations'
+    }
+    androidTestImplementation ("com.android.support.test:rules:$testRulesVersion"){
+        exclude module: 'support-annotations'
+    }
+}

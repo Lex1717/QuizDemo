@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+kapt {
+    useBuildCache = true
+    arguments {
+        arg("dagger.formatGeneratedSource", "disabled")
+        arg("dagger.gradle.incremental", "enabled")
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //Support libraries
+    api "com.android.support:appcompat-v7:$supportLibraryVersion"
+    api "com.android.support:design:$supportLibraryVersion"
+    api "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    api "com.android.support:support-vector-drawable:$supportLibraryVersion"
+    api "com.android.support:support-annotations:$supportLibraryVersion"
+    api "com.android.support:cardview-v7:$supportLibraryVersion"
+
+    //DI
+    api "com.google.dagger:dagger:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    //MVP Moxy
+    api "com.arello-mobile:moxy:$moxyVersion"
+    api "com.arello-mobile:moxy-app-compat:$moxyVersion"
+
+    //Navigation
+    api "ru.terrakok.cicerone:cicerone:$ciceroneVersion"
+
+    //Network
+    api "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    api "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    api "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+
+    //Rx
+    api "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    api "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+
+    //Images
+    api "com.github.bumptech.glide:glide:$glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$glideVersion"
+
+    //AdapterDelegate
+    api "com.hannesdorfmann:adapterdelegates3:$adapterDelegateVersion"
+
+    //Test
+    testImplementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoVersion"
+    androidTestImplementation ("com.android.support.test:runner:$testRunnerVersion"){
+        exclude module: 'support-annotations'
+    }
+    androidTestImplementation ("com.android.support.test.espresso:espresso-core:$espressoVersion"){
+        exclude module: 'support-annotations'
+    }
+    androidTestImplementation ("com.android.support.test:rules:$testRulesVersion"){
+        exclude module: 'support-annotations'
+    }
+}

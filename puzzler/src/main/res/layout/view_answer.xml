@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/answerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/positive_color">
+    <TextView
+        android:id="@+id/answerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_indent"
+        android:layout_marginRight="@dimen/standard_indent"
+        android:layout_marginTop="@dimen/standard_indent"
+        android:layout_marginBottom="@dimen/small_indent"
+        android:textAppearance="@style/TextTitle"
+        android:textColor="@color/white"
+        tools:text="@string/correct_answer"/>
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_indent"
+        android:layout_marginRight="@dimen/standard_indent"
+        android:layout_marginTop="@dimen/small_indent"
+        android:layout_marginBottom="@dimen/standard_indent"
+        android:textAppearance="@style/TextBody"
+        android:textColor="@color/white"
+        tools:text="Absolutely correct!"/>
+</LinearLayout>

@@ -1,0 +1,110 @@
+{
+  "courseId": "111",
+  "cardsList": [
+    {
+      "optionsList": [
+        {
+          "text": "They store many values in a single name",
+          "id": 0
+        },
+        {
+          "text": "They set many names to the same value",
+          "id": 1
+        },
+        {
+          "text": "They use the same value in many places",
+          "id": 2
+        },
+        {
+          "text": "They use many values in the same place",
+          "id": 3
+        }
+      ],
+      "results": [
+        {
+          "text": "No, try again",
+          "isCorrect": false,
+          "id": 0
+        },
+        {
+          "text": "Why should we do that? There is another advantage.",
+          "isCorrect": false,
+          "id": 1
+        },
+        {
+          "text": "That's exactly right. Good job!",
+          "isCorrect": true,
+          "id": 2
+        },
+        {
+          "text": "No, look over the topic again.",
+          "isCorrect": false,
+          "id": 3
+        }
+      ],
+      "id": 1,
+      "title": "What can you remember about <b>variables</b> and why are they useful in a program"
+    },
+    {
+      "optionsList": [
+        {
+          "text": "True",
+          "id": 0
+        },
+        {
+          "text": "False",
+          "id": 1
+        }
+      ],
+      "results": [
+        {
+          "text": "No, try again",
+          "isCorrect": false,
+          "id": 0
+        },
+        {
+          "text": "Correct. Good job!",
+          "isCorrect": true,
+          "id": 1
+        }
+      ],
+      "id": 2,
+      "title": "True or false: there's only one type of number in Java and it's the integer"
+    },
+    {
+      "optionsList": [
+        {
+          "text": "Double quotes",
+          "id": 0
+        },
+        {
+          "text": "Parentheses",
+          "id": 1
+        },
+        {
+          "text": "Print()",
+          "id": 2
+        }
+      ],
+      "results": [
+        {
+          "text": "Yes! Strings are surrounded by quotes",
+          "isCorrect": true,
+          "id": 0
+        },
+        {
+          "text": "You were close",
+          "isCorrect": false,
+          "id": 1
+        },
+        {
+          "text": "Nope, try again!",
+          "isCorrect": false,
+          "id": 2
+        }
+      ],
+      "id": 3,
+      "title": "What are <b>strings</b> surrounded by?"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="puzzler">Puzzler</string>
+    <string name="demo_text">This demo app demonstrates concepts of the clean architecture and multi module project approach</string>
+</resources>

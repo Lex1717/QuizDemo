@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="refresh">Refresh</string>
+    <string name="empty_view_error">Oops…</string>
+    <string name="empty_view_error_description">Sorry, something went wrong. Please, try again later.</string>
+    <string name="empty_view_network_error_description">No internet. Check the connection and try again.</string>
+    <string name="empty_view_default_title">No data.</string>
+    <string name="empty_view_default_description">The list is empty.</string>
+    <string name="empty_view_icon">Empty view icon</string>
+</resources>

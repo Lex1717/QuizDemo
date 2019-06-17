@@ -1,0 +1,8 @@
+<resources>
+    <string name="user_results">User\'s results</string>
+    <string name="results">Results</string>
+    <string name="about">About</string>
+    <string name="demo_description">This is a demo app, that demonstrates clean multimodule architecture. Created by Y. Alexeev</string>
+    <string name="your_result">Your result: AnsweredQuestions: %1$d/%2$d\nCorrect answers: %3$d</string>
+
+</resources>

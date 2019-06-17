@@ -1,0 +1,9 @@
+<resources>
+    <!--Margins-->
+    <dimen name="small_indent">8dp</dimen>
+    <dimen name="standard_indent">16dp</dimen>
+    <dimen name="divider_thickness">1dp</dimen>
+
+    <!--Text size-->
+    <dimen name="subtitle_text">18sp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="solve">Solve</string>
+    <string name="next">Next</string>
+    <string name="correct_answer">Good job!</string>
+    <string name="incorrect_answer">Oops…</string>
+    <string name="finished_course">You finished the course!</string>
+    <string name="course_list">Courses</string>
+</resources>
